@@ -7,16 +7,16 @@ Design a database structure based on information:
 3.	Each product has assigned unit to where it is sold (like a box of spoons)(Unit)
 4.	Suggest a type, requirements and size of fields
 5.	You are allow to add your own properties
-Product	Category
-Code	Code
-Description	Description
-Price	
-IsAvailable	
-DeliveryDate	
-	
-Type	Unit
-Code	Code
-Description	Description
+
+Tables:
+
+|Product|Category|Type|Unit|
+|---|---|---|---|
+|Code|Code|Code|Code|
+|Description|Description|Description|Description|
+|Price|---|---|---|
+|IsAvailable|---|---|---|
+|DeliveryDate|---|---|---|
 
 API specification
 Design API based on information: 
