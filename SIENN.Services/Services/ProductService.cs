@@ -125,8 +125,8 @@ namespace SIENN.Services.Services
         {
             var data = _unitOfWork.ProductRepository
                                   .Find(p => (filters.HasUnitFilter && filters.UnitCodesFilter.Contains(p.Unit.Code))
-                                        && (filters.HasProductTypeFilter && filters.ProductTypeCodesFilter.Contains(p.ProductType.Code))
-                                        && (filters.HasCategoryFilter && p.ProductCategories.Any(pc => filters.CategoryCodesFilter.Contains(pc.Category.Code))));
+                                        || (filters.HasProductTypeFilter && filters.ProductTypeCodesFilter.Contains(p.ProductType.Code))
+                                        || (filters.HasCategoryFilter && p.ProductCategories.Any(pc => filters.CategoryCodesFilter.Contains(pc.Category.Code))));
             return _mapper.Map<IEnumerable<ProductDto>>(data);
         }
 
