@@ -25,15 +25,15 @@ Design API based on information:
 3.	Add a method which will filter products according to type, category and unit (all filters can be used at the same time)
 4.	Add method which will display bellow information:
 
-
-Nazwa pola	Format
-ProductDescription	(Code) Description
-Price	xx,xx $
-IsAvailable	Yes = „Available”, No = „Not available”
-DeliveryDate	12.12.2012
-CategoriesCount	
-Type	(Code) Description
-Unit	(Code) Description
+|Name|Format|
+|---|---|
+|ProductDescription|(Code) Description|
+|Price|xx,xx $|
+|IsAvailable|Yes = „Available”, No = „Not available”|
+|DeliveryDate|12.12.2012|
+|CategoriesCount|---|	
+|Type|(Code) Description|
+|Unit|(Code) Description|
 
 SQL
 For newly created database scheme write a queries which will return data about:
